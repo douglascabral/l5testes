@@ -25,3 +25,8 @@ Route::bind('projects', function($value, $route) {
 
 Route::resource('projects', 'ProjectsController');
 Route::resource('projects.tasks', 'TasksController');
+
+
+get('testes', 'TestesController@index');
+get('testes/file/download', 'TestesController@download');
+get('testes/file/local', 'TestesController@local');
